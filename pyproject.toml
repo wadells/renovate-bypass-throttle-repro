@@ -79,7 +79,7 @@ factory-boy = "3.3.3"
 freezegun = "1.5.2"
 
 # Documentation
-pygments = "2.19.1"
+pygments = "2.20.0"
 sphinx = "8.2.3"
 sphinx_rtd_theme = "3.0.2"
 
