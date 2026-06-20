@@ -30,7 +30,7 @@ termcolor = "*"
 
 # API
 djangorestframework = "~3.14"
-drf-yasg = "1.21.7"
+drf-yasg = "1.21.15"
 django-cors-headers = "^3.11.0"
 
 # Google SSO
