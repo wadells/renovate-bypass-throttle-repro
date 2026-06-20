@@ -76,7 +76,7 @@ pytest-xdist = "3.5.0"
 pytest-pudb = "0.7.0"
 pytest-mock = "3.14.1"
 factory-boy = "3.3.3"
-freezegun = "1.5.2"
+freezegun = "1.5.5"
 
 # Documentation
 pygments = "2.19.1"
