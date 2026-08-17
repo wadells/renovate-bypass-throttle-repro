@@ -2658,18 +2658,18 @@ test = ["pytest"]
 
 [[package]]
 name = "sqlparse"
-version = "0.5.0"
+version = "0.6.0"
 description = "A non-validating SQL parser."
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.10"
 files = [
-    {file = "sqlparse-0.5.0-py3-none-any.whl", hash = "sha256:c204494cd97479d0e39f28c93d46c0b2d5959c7b9ab904762ea6c7af211c8663"},
-    {file = "sqlparse-0.5.0.tar.gz", hash = "sha256:714d0a4932c059d16189f58ef5411ec2287a4360f17cdd0edd2d09d4c5087c93"},
+    {file = "sqlparse-0.6.0-py3-none-any.whl", hash = "sha256:b861c0288ce2fa56209a9a6412d2e066ac664b3873b89c26c9d8415e8e32996f"},
+    {file = "sqlparse-0.6.0.tar.gz", hash = "sha256:113c35c75365ab9cc9c7231d68c6428fb11c085fc8e9eb1ad659b7ddbf6cd2b9"},
 ]
 
 [package.extras]
-dev = ["build", "hatch"]
-doc = ["sphinx"]
+dev = ["build"]
+doc = ["furo", "sphinx"]
 
 [[package]]
 name = "stack-data"
@@ -2960,4 +2960,4 @@ testing = ["coverage[toml]", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.11"
-content-hash = "46129fa4f9d22e434694075bde66e164316e31ea242ba682bd54a5527c5b19ae"
+content-hash = "b89f8a1efc3851da45aa153bf9ecc20583a4901ca129d4d645d041a1a5190907"
