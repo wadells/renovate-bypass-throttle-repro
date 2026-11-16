@@ -1,33 +1,48 @@
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["config:best-practices"],
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:best-practices',
+  ],
   prHourlyLimit: 0,
   prConcurrentLimit: 5,
   osvVulnerabilityAlerts: true,
-  dependencyDashboardOSVVulnerabilitySummary: "all",
+  dependencyDashboard: {
+    osvVulnerabilitySummary: 'all',
+  },
   packageRules: [
-    // One MR per major node version
     {
-      matchDatasources: ["endoflife-date"],
-      matchPackageNames: ["aws-lambda"],
-      matchDepNames: ["node"],
-      extractVersion: "^nodejs(?<version>[0-9]{2})\\.x$",
-      commitMessageTopic: "Node.js", // this aligns with https://docs.renovatebot.com/presets-group/#groupnodejs
+      matchDatasources: [
+        'endoflife-date',
+      ],
+      matchPackageNames: [
+        'aws-lambda',
+      ],
+      matchDepNames: [
+        'node',
+      ],
+      extractVersion: '^nodejs(?<version>[0-9]{2})\\.x$',
+      commitMessageTopic: 'Node.js',
       separateMultipleMajor: true,
     },
     {
-      matchPackageNames: ["docker.io/library/python"],
+      matchPackageNames: [
+        'docker.io/library/python',
+      ],
       pinDigests: true,
       separateMultipleMinor: true,
     },
     {
-      matchPackageNames: ["docker.io/library/python"],
-      matchUpdateTypes: ["patch", "digest"],
+      matchPackageNames: [
+        'docker.io/library/python',
+      ],
+      matchUpdateTypes: [
+        'patch',
+        'digest',
+      ],
       groupName: null,
       schedule: [],
       dependencyDashboardApproval: false,
       minimumReleaseAge: null,
-    }
+    },
   ],
-
 }
